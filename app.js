@@ -1,33 +1,38 @@
-const board = document.querySelector('#board');
-const colors = ['#090979', '#097914', '#360979', '#790969', '#097679', '#767909', '#00241f', '#240000'];
-const SQUARES_NUMBER = 600;
+const item = document.querySelector('.item');
+const placeholders = document.querySelectorAll('.placeholder');
 
-for (let i = 0; i < SQUARES_NUMBER; i++) {
-    const square = document.createElement('div')
-    square.classList.add('square')
+item.addEventListener('dragstart', dragstart)
+item.addEventListener('dragend', dragend)
 
-    square.addEventListener('mouseover', () =>
-        setColor(square))
-
-    square.addEventListener('mouseleave', () =>
-        removeColor(square))
-
-    board.append(square)
+for (const placeholder of placeholders) {
+    placeholder.addEventListener('dragover', dragover);
+    placeholder.addEventListener('dragenter', dragenter);
+    placeholder.addEventListener('dragleave', dragleave);
+    placeholder.addEventListener('drop', dragdrop)
 }
 
-function setColor(element) {
-    const color = getRandomColor();
-    element.style.backgroundColor = color;
-    element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
+function dragstart(event) {
+    event.target.classList.add('hold');
+    setTimeout(() => event.target.classList.add('hide'), 0)
 }
 
-function removeColor(element) {
-    element.style.backgroundColor = '#1d1d1d'
-    element.style.boxShadow = `0 0 2px #000`
+function dragend(event) {
+    event.target.className = 'item'
 }
 
-function getRandomColor() {
-    const index = Math.floor(Math.random() * colors.length);
+function dragover(event) {
+    event.preventDefault()
+}
 
-    return colors[index]
+function dragenter(event) {
+    event.target.classList.add('hovered')
+}
+
+function dragleave(event) {
+    event.target.classList.remove('hovered')
+}
+
+function dragdrop(event) {
+    event.target.classList.remove('hovered')
+    event.target.append(item)
 }
