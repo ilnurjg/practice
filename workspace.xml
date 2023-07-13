@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e47c63d8-1bfe-457e-bc07-6ddddc081734" name="Changes" comment="" />
+    <list default="true" id="10450d79-88e3-406d-a316-85a202ea6299" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,13 +12,11 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2HbAjNdrcUteIcIY2Jg8WUwZbxY" />
+  <component name="ProjectId" id="2SWgsqiLVNlZTG9sMKDhAhiZLfZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,34 +27,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/WebStormProjects/Lambo",
     "list.type.of.created.stylesheet": "CSS",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\WebStormProjects\Lambo" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\WebStormProjects\Lambo\css" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e47c63d8-1bfe-457e-bc07-6ddddc081734" name="Changes" comment="" />
-      <created>1668543546460</created>
+      <changelist id="10450d79-88e3-406d-a316-85a202ea6299" name="Changes" comment="" />
+      <created>1689267961069</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1668543546460</updated>
-      <workItem from="1668543547687" duration="2835000" />
-      <workItem from="1668548942674" duration="7679000" />
-      <workItem from="1668601396036" duration="3822000" />
-      <workItem from="1668609482525" duration="96000" />
-      <workItem from="1668791635365" duration="636000" />
-      <workItem from="1668796014760" duration="15000" />
-      <workItem from="1689235784787" duration="932000" />
+      <updated>1689267961069</updated>
+      <workItem from="1689267962291" duration="72000" />
     </task>
     <servers />
   </component>

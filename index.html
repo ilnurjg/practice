@@ -1,72 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Слайдер | Проект 3</title>
 </head>
 <body>
-
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <ul class="menu-list menu-left">
-                    <li class="menu-item">
-                        <a class="menu-link" href="">О гонке</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="">Трек</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="">Lamborghini Super trofeo</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="">Новости</a>
-                    </li>
-                </ul>
-                <a class="logo" href="">
-                    <img class="logo-img" src="images/logo.svg" alt="logo">
-                </a>
-                <ul class="menu-list menu-right">
-                    <li class="menu-item">
-                        <a class="menu-link" href="">Купить билеты</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="">Смотреть онлайн</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+<div class="container">
+    <div class="sidebar">
+        <div
+                style="
+            background: linear-gradient(229.99deg, #4da0ee -26%, #53a7f7 145%);
+          "
+        >
+            <h1>Snow in the desert</h1>
+            <p>Love, death & robots</p>
         </div>
-    </header>
-    <main class="main">
-        <section class="promo">
-            <div class="container">
-                <div class="promo__inner">
-                    <h1 class="title">
-                        LAMBORGHINI SUPER TROFEO
-                    </h1>
-                    <h2 class="subtitle">
-                        Гранд-финал 2022
-                        <span>3-6 ноября</span>
-                    </h2>
-                    <p class="promo__text">
-                        автодром Портимао, Португалия
-                    </p>
-                    <a href="" class="promo__arrow">
-                        <img src="images/arrow.svg" alt="">
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script> src="js/main.js"</script>
+        <div
+                style="
+            background: linear-gradient(215.32deg, #e93235 -1%, #d4282b 124%);
+          "
+        >
+            <h1>Life Hutch</h1>
+            <p>Love, death & robots</p>
+        </div>
+        <div
+                style="
+            background: linear-gradient(221.87deg, #8308ea 1%, #5305af 128%);
+          "
+        >
+            <h1>Zima Blue</h1>
+            <p>Love, death & robots</p>
+        </div>
+        <div
+                style="
+            background: linear-gradient(220.16deg, #bea890 -8%, #9e8c79 138%);
+          "
+        >
+            <h1>Automated Customer Service</h1>
+            <p>Love, death & robots</p>
+        </div>
+    </div>
+    <div class="main-slide">
+        <div
+                style="
+            background-image: url('https://images.unsplash.com/photo-1669605009732-e7da28644ed4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDc0OHxNOGpWYkxiVFJ3c3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60');
+          "
+        ></div>
+        <div
+                style="
+            background-image: url('https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2023&q=80');
+          "
+        ></div>
+        <div
+                style="
+            background-image: url('https://images.unsplash.com/photo-1668808345879-2711d41cf70f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80');
+          "
+        ></div>
+        <div
+                style="
+            background-image: url('https://images.unsplash.com/photo-1669511067317-6ba9228a62b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80');
+          "
+        ></div>
+    </div>
+    <div class="controls">
+        <button class="down-button">
+            <i class="fas fa-arrow-down"></i>
+        </button>
+        <button class="up-button">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+</div>
+<script src="app.js"></script>
 </body>
 </html>
