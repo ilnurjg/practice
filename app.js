@@ -1,15 +1,33 @@
-const slides = document.querySelectorAll('.slide');
+const board = document.querySelector('#board');
+const colors = ['#090979', '#097914', '#360979', '#790969', '#097679', '#767909', '#00241f', '#240000'];
+const SQUARES_NUMBER = 600;
 
-for (const slide of slides) {
-    slide.addEventListener('click', () => {
-        clearActiveClasses()
+for (let i = 0; i < SQUARES_NUMBER; i++) {
+    const square = document.createElement('div')
+    square.classList.add('square')
 
-        slide.classList.add('active')
-    })
+    square.addEventListener('mouseover', () =>
+        setColor(square))
+
+    square.addEventListener('mouseleave', () =>
+        removeColor(square))
+
+    board.append(square)
 }
 
-function clearActiveClasses() {
-    slides.forEach((slide) => {
-        slide.classList.remove('active')
-    })
+function setColor(element) {
+    const color = getRandomColor();
+    element.style.backgroundColor = color;
+    element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
+}
+
+function removeColor(element) {
+    element.style.backgroundColor = '#1d1d1d'
+    element.style.boxShadow = `0 0 2px #000`
+}
+
+function getRandomColor() {
+    const index = Math.floor(Math.random() * colors.length);
+
+    return colors[index]
 }
