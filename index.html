@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Drag & Drop | Проект 2</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
-<div>
-    <div class="row">
-        <div class="col-header start">Начать</div>
-        <div class="col-header progress">В процессе</div>
-        <div class="col-header done">Готовы</div>
-    </div>
 
-    <div class="row">
-        <div class="placeholder">
-            <div class="item" draggable="true">Перетащи меня</div>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="menu-list menu-left">
+                    <li class="menu-item">
+                        <a class="menu-link" href="">О гонке</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="">Трек</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="">Lamborghini Super trofeo</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="">Новости</a>
+                    </li>
+                </ul>
+                <a class="logo" href="">
+                    <img class="logo-img" src="images/logo.svg" alt="logo">
+                </a>
+                <ul class="menu-list menu-right">
+                    <li class="menu-item">
+                        <a class="menu-link" href="">Купить билеты</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="">Смотреть онлайн</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="placeholder"></div>
-        <div class="placeholder"></div>
-    </div>
-</div>
-<script src='app.js'></script>
+    </header>
+    <main class="main">
+        <section class="promo">
+            <div class="container">
+                <div class="promo__inner">
+                    <h1 class="title">
+                        LAMBORGHINI SUPER TROFEO
+                    </h1>
+                    <h2 class="subtitle">
+                        Гранд-финал 2022
+                        <span>3-6 ноября</span>
+                    </h2>
+                    <p class="promo__text">
+                        автодром Портимао, Португалия
+                    </p>
+                    <a href="" class="promo__arrow">
+                        <img src="images/arrow.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script> src="js/main.js"</script>
 </body>
 </html>
